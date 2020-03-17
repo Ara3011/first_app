@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class CounterPage extends StatelessWidget{
+class CounterOk extends StatefulWidget{
 
 final TextStyle textPersonal=TextStyle(
 fontSize: 16,
@@ -44,38 +44,12 @@ int _count=0;
           ],
         ),
       ),
-floatingActionButton: Stack(
-        children: <Widget>[
-          Padding(padding: EdgeInsets.only(left: 31),
-            child: Align(
-              alignment: Alignment.bottomRight,
-              child: FloatingActionButton(
-                onPressed: (){
-                  _count++;
-                  print(_count);
-                },
-                child: Icon(Icons.add),),
-            ),),
-
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: FloatingActionButton(
-              onPressed: (){
-                _count--;
-                print(_count);
-              },
-              child: Icon(Icons.remove_circle),),
-          ),
-          Align(
-            alignment: Alignment.bottomLeft,
-            child: FloatingActionButton(
-              onPressed: (){
-                _count=0;
-                print(_count);
-              },
-              child: Text("0"),),
-          ),
-        ],
+floatingActionButton: FloatingActionButton(
+  child: Icon(Icons.add),
+  onPressed: (){
+    _count++;
+    print("$_count");
+  },
       ),
     );
   }
