@@ -1,6 +1,7 @@
 
 import 'package:fistapp/src/paginas/counter_page.dart';
-//import 'package:fistapp/src/paginas/counter_ok.dart';
+import 'package:fistapp/src/paginas/action_page.dart';
+import 'package:fistapp/src/paginas/examen.dart';
 
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget{ //TODA LA CONFIGURACION DE LA APLICACION
     // TODO: implement build
     return MaterialApp(//Material es un widget
       debugShowCheckedModeBanner: false, 
-      home: CounterPage() //Home es una llave  y widget tipo   //Text align es para mover texto
+      home: Examen() //Home es una llave  y widget tipo   //Text align es para mover texto
     );
   }
 
